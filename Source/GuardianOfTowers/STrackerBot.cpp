@@ -107,6 +107,7 @@ void ASTrackerBot::SelfDestruct()
 	bExploded = true;
 
 	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ExplosionEffect, GetActorLocation());
+	UGameplayStatics::PlaySound2D(GetWorld(), ExplosionSound);
 
 	TArray<AActor*> IgnoredActors;
 	IgnoredActors.Add(this);

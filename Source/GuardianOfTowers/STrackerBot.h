@@ -37,10 +37,14 @@ protected:
 	UPROPERTY(VisibleDefaultsOnly, Category = "Components")
 	class USphereComponent* SphereComp;
 
+	UPROPERTY(VisibleDefaultsOnly, Category = "Components")
 	class UMaterialInstanceDynamic* MatInst;
 
 	UPROPERTY(EditDefaultsOnly, Category = "TrackerBot")
 	class UParticleSystem* ExplosionEffect;
+
+	UPROPERTY(EditDefaultsOnly, Category = "TrackerBot")
+	class USoundBase* ExplosionSound;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "TrackerBot")
 	bool bBotSawPlayer;
